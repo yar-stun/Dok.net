@@ -1,0 +1,41 @@
+.service-card {
+  padding: 0 6.5px;
+  width: 25%;
+
+  &__inner {
+    background: $color-white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 8px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 230px;
+  }
+
+  &__body {
+    min-height: 210px;
+    padding: 11px 18px 25px 20px;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: $color-secondary;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  &__desc {
+    font-weight: 300;
+    font-size: 15px;
+    color: #323232;
+  }
+
+  &__btn {
+    display: block;
+    width: 93%;
+    margin: 0 auto;
+  }
+}

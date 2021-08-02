@@ -1,0 +1,68 @@
+<!-- Contact modal -->
+<div class="modal modal--default modal-contacts" id="contact-modal" aria-hidden="true">
+  <div class="modal__overlay">
+    <div class="modal__container">
+      <div class="modal__content">
+        <div class="modal__head">
+          <div class="modal__title">Контакты</div>
+        </div>
+        <div class="modal__body">
+          <div class="modal-contacts__block">
+            <span class="modal-contacts__label">Телефон:</span>
+            <a class="modal-contacts__item modal-contacts__item--tel" href="">8 800 444-77-77</a>
+          </div>
+          <div class="modal-contacts__block">
+            <span class="modal-contacts__label">E-mail:</span>
+            <a class="modal-contacts__item" href="">Почта@gmail.com</a>
+          </div>
+          <div class="modal-contacts__block modal-contacts__block--contacts">
+            <span class="modal-contacts__label">Социальные сети:</span>
+            <div class="socials modal-contacts__socials">
+              <a class="socials__link socials__link--black socials__link--hover-blue" href="">
+                <svg>
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a class="socials__link socials__link--black socials__link--hover-blue" href="">
+                <svg>
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+              <a class="socials__link socials__link--black socials__link--hover-blue" href="">
+                <svg>
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <button class="btn btn-reset btn--primary modal-contacts__btn js-open-modal" data-modal="feedback-modal">Обратная связь</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact modal end -->
+
+<!-- feedback modal -->
+<div class="modal modal--default modal-feedback" id="feedback-modal" aria-hidden="true">
+  <div class="modal__overlay">
+    <div class="modal__container">
+      <div class="modal__content">
+        <div class="modal__head">
+          <div class="modal__title">Оставь заявку</div>
+          <div class="modal__subtitle">В течении дня с Вами свяжется менеджер</div>
+        </div>
+        <div class="modal__body">
+          <form class="feedback-form">
+            <input type="text" class="feedback-form__input" name="name" placeholder="Ф.И.О">
+            <input type="tel" class="feedback-form__input" name="tel" placeholder="+7 (000)-00-00">
+            <button class="btn btn-reset btn--primary feedback-form__btn" type="submit">Отправить заявку</button>
+            <div class="feedback-form__policy">
+              Отправляя заявку вы соглашаетесь с <a class="feedback-form__policy-link" href="">политикой конфиденциальности сайта</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

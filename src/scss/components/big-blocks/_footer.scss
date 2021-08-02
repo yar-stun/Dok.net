@@ -1,0 +1,56 @@
+.footer {
+  padding: 54px 0 44px;
+  background: $color-secondary;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+    color: $color-white;
+
+    &--top-space {
+      padding-top: 30px;
+    }
+  }
+
+  &__company {
+    font-size: 16px;
+    color: $color-white;
+    margin: 12px 0 25px;
+  }
+
+  &__author {
+    font-size: 11px;
+    color: $color-white;
+
+    &-author {
+      color: $color-white;
+      font-size: 18px;
+    }
+  }
+
+  &__privacy {
+    font-size: 16px;
+    color: $color-white;
+  }
+
+  &__label {
+    font-size: 16px;
+    color: #5E7FFF;
+  }
+
+  &__tel {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 114.2%;
+    color: #FFFFFF;
+    display: block;
+    margin-top: 13px;
+  }
+
+  &__socials {
+    margin-top: 15px;
+  }
+}

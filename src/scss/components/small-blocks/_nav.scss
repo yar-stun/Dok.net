@@ -1,0 +1,20 @@
+.nav {
+  &__list {
+    display: flex;
+    align-self: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  &__link {
+    font: 500 16px / 120% $font-family-gotham;
+    color: $color-secondary;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

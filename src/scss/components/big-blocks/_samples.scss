@@ -1,0 +1,29 @@
+.samples {
+  padding-bottom: 86px;
+
+  &__title {
+    align-self: flex-start;
+  }
+
+  &__tabs-head {
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 55px;
+  }
+
+  &__tabs-nav {
+    margin-left: 64px;
+    flex: 1 1 auto;
+    align-self: center;
+  }
+
+  &__decor1 {
+    width: 1087px;
+    height: 1087px;
+    left: -600px;
+    bottom: -100px;
+    background: #EDEDED;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}

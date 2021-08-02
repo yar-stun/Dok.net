@@ -1,0 +1,174 @@
+.modal {
+  position: relative;
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 46px 62px 68px;
+    width: 530px;
+    max-height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+  &__content {
+    color: black;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: $color-black;
+    padding-bottom: 25px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    padding-bottom: 40px;
+  }
+}
+
+.modal-contacts {
+
+  &__block {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+
+    &--contacts {
+      flex-direction: initial;
+      align-items: center;
+      padding-top: 32px;
+
+      .modal-contacts__label {
+        margin-bottom: 0;
+        margin-right: 48px;
+      }
+    }
+  }
+
+  &__label {
+    font-size: 18px;
+    color: #ABABAB;
+    margin-bottom: 8px;
+  }
+
+  &__item {
+    font-weight: 300;
+    font-size: 24px;
+    color: $color-black;
+
+    &--tel {
+      font-size: 32px;
+    }
+  }
+
+  &__socials {
+    .socials__link {
+      margin-right: 21px;
+
+      svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 52px;
+    display: block;
+    width: 100%;
+  }
+}
+
+.modal-feedback {
+
+  .modal__container {
+    padding-bottom: 32px;
+  }
+
+  .modal__head {
+    text-align: center;
+  }
+
+  .modal__title {
+    padding-bottom: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal[aria-hidden="false"] .modal__overlay {
+  animation: fadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.modal[aria-hidden="false"] .modal__container {
+  animation: slideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.modal[aria-hidden="true"] .modal__overlay {
+  animation: fadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.modal[aria-hidden="true"] .modal__container {
+  animation: slideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.modal .modal__container,
+.modal .modal__overlay {
+  will-change: transform;
+}
+
+/*-- Modal Animations --*/
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(15%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes slideOut {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10%); }
+}

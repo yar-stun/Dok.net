@@ -1,0 +1,15 @@
+.text-decor {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: $color-primary;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 6px;
+    height: 23px;
+  }
+}

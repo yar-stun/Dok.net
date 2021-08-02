@@ -1,3 +1,26 @@
-// @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
+@import 'vars';
 
-@import "./components/header";
+//Big blocks
+@import "components/big-blocks/header";
+@import "components/big-blocks/hero";
+@import "components/big-blocks/note";
+@import "components/big-blocks/samples";
+@import "components/big-blocks/advantages";
+@import "components/big-blocks/services";
+@import "components/big-blocks/reviews";
+@import "components/big-blocks/footer";
+
+//small blocks
+@import "components/small-blocks/nav";
+@import "components/small-blocks/language";
+@import "components/small-blocks/btn";
+@import "components/small-blocks/text-decor";
+@import "components/small-blocks/subsections";
+@import "components/small-blocks/socials";
+@import "components/small-blocks/document-card";
+@import "components/small-blocks/tabs";
+@import "components/small-blocks/service-card";
+@import "components/small-blocks/review-card";
+@import "components/small-blocks/star-rating";
+@import "components/small-blocks/modal";
+@import "components/small-blocks/feedback-form";

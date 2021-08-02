@@ -1,0 +1,46 @@
+.feedback-form {
+  width: 100%;
+
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px 18px;
+    background: #F4F4F4;
+    border-radius: 7px;
+    font-size: 16px;
+    color: #767676;
+    border: 1px solid transparent;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      color: #767676;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      border: 1px solid $color-primary;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 50px auto 60px;
+  }
+
+  &__policy {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+
+    &-link {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+  }
+}

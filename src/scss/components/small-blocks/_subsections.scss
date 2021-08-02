@@ -1,0 +1,31 @@
+.subsections {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 128px;
+    padding-right: 52px;
+    border-right: 1px solid #1F1C3D;
+
+    &:not(:first-child) {
+      padding-left: 30px;
+    }
+
+    &-img {
+      margin-right: 20px;
+    }
+
+    &-title {
+      font: 400 24px / 120% $font-family-stark;
+      color: $color-white;
+    }
+
+    &-link {
+      text-decoration: underline;
+      font-size: 13px;
+      color: #BCBCBC;
+    }
+  }
+}
