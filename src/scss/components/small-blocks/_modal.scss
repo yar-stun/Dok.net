@@ -38,6 +38,13 @@
     color: $color-black;
     padding-bottom: 25px;
   }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    padding-bottom: 40px;
+  }
 }
 
 .modal-contacts {
@@ -92,6 +99,27 @@
     width: 100%;
   }
 }
+
+.modal-feedback {
+
+  .modal__container {
+    padding-bottom: 32px;
+  }
+
+  .modal__head {
+    text-align: center;
+  }
+
+  .modal__title {
+    padding-bottom: 12px;
+  }
+}
+
+
+
+
+
+
 
 
 
