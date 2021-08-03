@@ -1,3 +1,32 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="container header__inner">
+    <div class="header__left">
+      <a class="logo header__logo">
+        <svg>
+        <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="nav header__nav">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a class="nav__link" href="">Каталог</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Отзывы</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Почему мы?</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__right">
+      <div class="btn btn-reset btn--primary btn--sm js-open-modal" data-modal="contact-modal">
+        Оставить заявку
+      </div>
+      <div class="language header__language">
+        <span class="language__item language__item--active">RUS</span>
+        <span class="language__item">ARA</span>
+        <span class="language__item">UKR</span>
+        <svg>
+        <use xlink:href="img/sprite.svg#arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
 </header>

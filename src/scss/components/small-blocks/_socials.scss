@@ -1,0 +1,64 @@
+.socials {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    background: transparent;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: #FFFFFF;
+    }
+
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+
+    &--bordered {
+      width: 62px;
+      height: 62px;
+      border: 2px solid #FFFFFF;
+      border-radius: 12px;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &-inst {
+        &:hover {
+          background: linear-gradient(225deg, #833AB4 8.06%, #C92A5E 31.22%, #FD3724 52.18%, #FCB046 69.22%, #FFDC80 91.94%);
+        }
+      }
+
+      &-telegram {
+        &:hover {
+          background: #4EA6D8;
+        }
+      }
+
+      &-whatsapp {
+        &:hover {
+          background: #49BD8C;
+        }
+      }
+    }
+
+    &--hover-blue svg {
+      transition: .3s;
+
+      &:hover {
+        fill: #5D7FFF !important;
+      }
+    }
+
+    &--black svg{
+      fill: #000000 !important;
+    }
+  }
+
+}

@@ -1,0 +1,32 @@
+.document-card {
+  padding-left: 9px;
+  padding-right: 9px;
+  width: 25%;
+  padding-bottom: 34px;
+
+  &__inner {
+    background: $color-white;
+    border-radius: 10px;
+    padding: 9px;
+  }
+
+  &__body {
+    min-height: 95px;
+    padding: 7px 9px 15px;
+  }
+
+  &__title {
+    font: 400 18px / 120% $font-family-stark;
+    margin-bottom: 6px;
+  }
+
+  &__desc {
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+.reviews {
+  padding: 72px 0 115px 0;
+
+  &__head {
+    text-align: center;
+  }
+
+  &__title {
+    color: $color-primary;
+  }
+
+  &__subtitle {
+    font: 500 18px / 120% $font-family-stark;
+    color: $color-secondary;
+  }
+
+  &__bg-text {
+    position: absolute;
+    font-weight: bold;
+    font-size: 240px;
+    color: #EFEFEF;
+    right: 30px;
+    top: -30px;
+    z-index: -2;
+  }
+
+  &__decor1 {
+    left: 0;
+    top: -80px;
+  }
+
+  &__list{
+    padding-top: 75px;
+  }
+}

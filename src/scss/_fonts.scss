@@ -1,1 +1,6 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@include font-face("Gotham Pro", "../fonts/GothamPro-Light", 300, normal);
+@include font-face("Gotham Pro", "../fonts/GothamPro", 400, normal);
+@include font-face("Gotham Pro", "../fonts/GothamPro-Medium", 500, normal);
+@include font-face("Gotham Pro", "../fonts/GothamPro-Bold", 700, normal);
+
+@include font-face-otf("Stark", "../fonts/Stark", 400, normal);

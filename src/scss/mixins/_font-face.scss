@@ -8,3 +8,13 @@
   }
 }
 
+@mixin font-face-otf($font-family, $url, $weight, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('../fonts/#{$url}.OTF') format("opentype");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+

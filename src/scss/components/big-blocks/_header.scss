@@ -1,0 +1,33 @@
+.header {
+  padding-top: 38px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__right {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__logo {
+    svg {
+      width: 138px;
+      height: 46px;
+    }
+  }
+
+  &__nav {
+    margin: 0 30px;
+  }
+}

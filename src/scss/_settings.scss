@@ -10,8 +10,15 @@ html {
 
 body {
   margin: 0;
-  font-family: "asd", sans-serif;
-  background-color: var(--color-white);
+  font-family: "Gotham Pro", sans-serif;
+  overflow-x: hidden;
+
+  /*фикс прыжков страницы при overflow-hidden*/
+  margin-right: calc(-1 * (100vw - 100%));
+
+  &.hide-scroll {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -22,9 +29,14 @@ a {
   text-decoration: none;
 }
 
-ul {
+section {
+  position: relative;
+}
+
+.list-reset {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .is-outer {
@@ -32,8 +44,25 @@ ul {
   left: -9999px !important; // stylelint-disable-line declaration-no-important
 }
 
-.site-container {
-  overflow: hidden;
+.page {
+  background: url("../img/main-bg.png") repeat-y 50% 0;
+  position: relative;
+  z-index: 1;
+  //overflow-x: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.4;
+    background: #E5E5E5;
+    z-index: -1;
+  }
 }
 
 .is-hidden {
@@ -56,14 +85,59 @@ ul {
   border: none;
   background: transparent;
   cursor: pointer;
+  padding: 0;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 1430px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.block-title {
+  font: 400 65px / 120% $font-family-stark;
+  color: $color-secondary;
+
+  &--line {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -18px;
+      height: 7px;
+      width: 105px;
+      background: #2649D1;
+    }
+  }
+}
+
+.decor {
+  position: absolute;
+  z-index: -1;
+}
+
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 -15px;
+
+
+  &--documents {
+    margin: 0 -9px;
+  }
+
+  &--services {
+    margin: 0 -6.5px;
+  }
+
+  &--reviews {
+    margin: 0 -10.5px;
+  }
 }
