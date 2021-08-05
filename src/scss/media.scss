@@ -1,0 +1,538 @@
+@media (max-width: 1550px) {
+  .hero__bg-text {
+    font: 700 180px/120% "Gotham Pro", sans-serif;
+    left: -20px;
+  }
+  .hero__right-img {
+    margin-left: 80px;
+    width: 90%;
+  }
+  span.hero__bg-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1440px) {
+  .note__decor2 {
+    right: 0;
+    bottom: -259px;
+  }
+
+  .note__title-decor {
+    right: -74px;
+    bottom: -5px;
+  }
+
+  .note__title.block-title {
+    display: inline;
+  }
+
+  .note__right {
+    width: 80%;
+    padding-left: 42px;
+    margin: 0 auto;
+  }
+
+  .note__left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .note__title {
+    font-size: 55px;
+    line-height: 93.7%;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .note__subtitle {
+    font: 400 20px/120% "Stark", sans-serif;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero__left {
+    max-width: 560px;
+    padding-left: 20px;
+  }
+  .hero__right-img {
+    margin-left: -60px;
+    width: 90%;
+  }
+  .hero-board {
+    bottom: -156px;
+    height: 156px;
+  }
+  .hero__bg-text {
+    font: 700 140px/120% "Gotham Pro", sans-serif;
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    display: none;
+  }
+  .subsections__item {
+    height: 124px;
+  }
+
+}
+
+
+@media (max-width: 1152px) {
+  .note__decor2 {
+    right: 0;
+    bottom: -279px;
+    max-width: 100px;
+  }
+}
+
+
+@media (min-width: 991px) {
+  .slider__inner {
+    display: none;
+  }
+
+  .review-slider--bottom__inner {
+    display: none;
+  }
+
+  .burger__menu {
+    display: none;
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  .mobile-menu__overlay {
+    z-index: 1;
+  }
+
+  .review-slider--bottom__text {
+    font-family: Gotham Pro;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 114.2%;
+    color: #000000;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .review-card__inner-slider {
+    padding: 32px 22px 36px;
+    background: #fff;
+    border-radius: 14px;
+    width: 416px;
+  }
+
+  .slider__inner {
+    margin-top: 44px;
+  }
+
+  .note__inner {
+    display: block;
+  }
+  .header__nav,
+  .header__btn-feedback, {
+    display: none;
+  }
+  .header__left {
+    justify-content: flex-start;
+  }
+
+  .socials {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__inner {
+    display: block;
+    text-align: center;
+  }
+
+  .block-title {
+    font: 400 45px/120% "Stark", sans-serif;
+  }
+
+  .reviews__list.items-list.items-list--reviews {
+    display: none;
+  }
+
+  span.reviews__bg-text {
+    display: none;
+  }
+  .services__list.items-list.items-list--services {
+    display: block;
+  }
+  .service-card__img {
+    display: block;
+    width: 339px;
+    height: 230px;
+  }
+  .service-card {
+    width: 337px;
+    margin: 0 auto;
+  }
+  .service-card {
+    padding-bottom: 21px;
+  }
+
+  .note__left-img {
+    margin-top: 0;
+    display: block;
+    height: 100%;
+  }
+  .note__left {
+    width: 100%;
+    margin: 0 auto;
+    height: 560px;
+    margin-bottom: 30px;
+  }
+  .note-board {
+    position: absolute;
+    width: 80%;
+    height: 80px;
+    top: 578px;
+  }
+
+  .review-slider--bottom__inner svg {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .hero__inner {
+    display: block;
+  }
+
+  .hero__subtitle {
+    font: 400 14px/120% "Stark", sans-serif;
+  }
+
+  .hero__title {
+    font: 400 45px/120% "Stark", sans-serif;
+  }
+
+  .hero__right-img {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 80px;
+  }
+
+  .hero__bg-text {
+    font: 700 64px/120% "Gotham Pro", sans-serif;
+  }
+
+  .hero__title {
+    margin: 12px 0 20px;
+  }
+
+  .hero__bg-text {
+    left: 290px;
+    top: 160px;
+  }
+
+  .text-decor {
+    width: 35px;
+    height: 38px;
+    background: #2649D1;
+    left: 390px;
+    top: -10px;
+  }
+  .text-decor svg {
+    width: 5px;
+    height: 13px;
+  }
+  .hero-board {
+    bottom: -116px;
+    height: 124px;
+  }
+  .subsections__item-link {
+    display: none;
+  }
+  .subsections__item-title {
+    font: 400 14px/120% "Stark", sans-serif;
+  }
+  .subsections__item {
+    display: block;
+    padding-top: 30px;
+  }
+  img.subsections__item-img {
+    width: 44px;
+    height: 44px;
+  }
+  .hero-board:before {
+    bottom: -16px;
+    width: 103.5%;
+    height: 104%;
+  }
+
+  .header {
+    padding-top: 20px;
+    background: #fff;
+  }
+
+  .menu-burger {
+    display: block;
+    margin-right: 42px;
+    margin-left: 0;
+  }
+
+  .header__logo {
+    z-index: 101;
+  }
+
+  a.nav__link {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  ul.nav__list.list-reset {
+    display: block;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 110px;
+  }
+
+  li.nav__item {
+    border-bottom: 1px solid #1C1A39;
+    margin-right: 0;
+    margin-bottom: 15px;
+    padding-bottom: 13px;
+  }
+
+  .header__btn-feedback{
+    z-index: 101;
+  }
+  .mobile-menu button {
+    text-align: center;
+    margin: 30px 10px;
+    border-radius: 10px;
+  }
+  .language  svg {
+    transform: rotate(90deg);
+  }
+
+  .text-decor.note__title-decor {
+   left: 520px;
+    top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    padding: 0;
+    width: 416px;
+  }
+  .footer__privacy {
+    font-size: 14px;
+  }
+  .review-card__body {
+    padding-top: 15px;
+    font-size: 14px;
+  }
+
+  .review-card__head {
+    padding-bottom: 30px;
+  }
+
+  .block-title {
+    font: 400 30px/120% "Stark", sans-serif;
+  }
+
+  .reviews__subtitle {
+    font: 500 16px/120% "Stark", sans-serif;
+  }
+
+  .reviews__decor1 {
+    left: -160px;
+    top: -260px;
+    width: 40%;
+  }
+
+  .advantages__inner {
+    display: block;
+  }
+
+  .advantage-item {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .text-decor {
+    width: 35px;
+    height: 38px;
+  }
+
+  .text-decor svg {
+    width: 5px;
+    height: 13px;
+  }
+
+  .note-board {
+    position: absolute;
+    width: 90%;
+    height: 80px;
+    top: 578px;
+  }
+
+  .note__right {
+    width: 100%;
+  }
+
+  .hero__bg-text {
+    left: 170px;
+    top: 160px;
+  }
+
+  .hero__subtitle {
+    font: 400 14px/120% "Stark", sans-serif;
+    width: 207px;
+  }
+
+  .text-decor {
+    left: 200px;
+    top: -3px;
+  }
+  .subsections__item-img {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+  .text-decor.note__title-decor {
+    left: 360px;
+    top: 0;
+  }
+
+  .reviews {
+    padding: 64px 0 80px 0;
+  }
+
+  .header__logo svg {
+    width: 89px;
+    height: 30px;
+  }
+  .hero-board {
+    width: 92%;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .note__left {
+    height: 475px;
+  }
+
+  .note-board {
+    position: absolute;
+    width: 90%;
+    height: 64px;
+    top: 505px;
+  }
+
+  .hero__bg-text {
+    left: 70px;
+    top: 170px;
+  }
+  .hero__decor1 {
+    right: 30px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 500px)  {
+
+  .hero-board {
+    width: 102%;
+  }
+
+  .hero-board {
+    bottom: -123px;
+    height: 124px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .note__left {
+    height: 365px;
+  }
+
+  .note-board {
+    top: 415px;
+  }
+
+  .review-card {
+    width: 100%;
+  }
+  .review-card__inner-slider {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero__bg-text {
+    left: 0px;
+    top: 170px;
+  }
+  .hero__decor1 {
+    width: 20%;
+  }
+  .text-decor.note__title-decor {
+    left: 300px;
+    top: 40px;
+  }
+  .slider__inner {
+    margin-top: 30px;
+  }
+}
+
+
+
+
+@media (max-width: 411px) {
+
+  .text-decor.note__title-decor {
+    left: 220px;
+    top: 20px;
+  }
+
+  .review-card__inner-slider {
+    padding: 15px 15px 20px;
+  }
+
+  .review-card__head {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero__bg-text {
+    font: 700 32px/120% "Gotham Pro", sans-serif;
+    left: 90px;
+    top: 240px;
+  }
+
+  .subsections__item {
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .note__left-img {
+    height: 100%;
+    width: 259px;
+  }
+  .note__left {
+    height: 259px;
+    margin-bottom: 40px;
+  }
+  .note-board {
+    top: 325px;
+  }
+  .note__title-decor {
+    right: -124px;
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,45 @@
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+
+  &.is-open {
+    display: flex;
+
+    .mobile-menu__overlay {
+      animation: menu-overlay-open .3s ease-in;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #141229;
+    animation: menu-overlay-close .3s ease-in-out;
+  }
+}
+
+
+@keyframes menu-overlay-open {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes menu-overlay-close {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}

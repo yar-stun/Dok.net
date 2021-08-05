@@ -1,11 +1,21 @@
 <header class="header">
   <div class="container header__inner">
     <div class="header__left">
+      <div class="menu-burger visible-mobile" id="burger-menu">
+        <span class="menu-burger__el"></span>
+      </div>
       <a class="logo header__logo">
-        <svg>
+        <svg class="header__logo-pc">
         <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </a>
+
+      <a href="" class="logo-mobile-menu">
+        <svg>
+          <use xlink:href="img/sprite.svg#logo-white"></use>
+        </svg>
+      </a>
+
       <nav class="nav header__nav">
         <ul class="nav__list list-reset">
           <li class="nav__item"><a class="nav__link" href="">Каталог</a></li>
@@ -16,9 +26,9 @@
       </nav>
     </div>
     <div class="header__right">
-      <div class="btn btn-reset btn--primary btn--sm js-open-modal" data-modal="feedback-modal">
+      <button class="btn btn-reset btn--primary btn--sm js-open-modal header__btn-feedback" data-modal="feedback-modal">
         Оставить заявку
-      </div>
+      </button>
       <div class="language header__language">
         <span class="language__item language__item--active">RUS</span>
         <span class="language__item">ARA</span>
@@ -28,5 +38,22 @@
         </svg>
       </div>
     </div>
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__overlay">
+        <nav class="nav mobile-menu__nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item"><a class="nav__link" href="">Каталог</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Отзывы</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Почему мы?</a></li>
+            <li class="nav__item"><a class="nav__link js-open-modal" href="" data-modal="contact-modal">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="btn btn-reset btn--primary btn--sm js-open-modal" data-modal="feedback-modal">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+
   </div>
 </header>
