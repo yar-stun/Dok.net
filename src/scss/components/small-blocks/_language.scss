@@ -5,6 +5,7 @@
   cursor: pointer;
   transition: width .2s ease-in-out;
   position: relative;
+  z-index: 1;
 
   &.is-open {
 

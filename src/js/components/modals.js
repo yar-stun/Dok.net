@@ -1,6 +1,7 @@
 const openModalBtn = document.querySelectorAll('.js-open-modal');
 const modals = document.querySelectorAll('.modal');
 const modalContainer = document.querySelectorAll('.modal__container');
+const header = document.querySelector('header.header');
 
 /*--- Кнопки открытия модалок ---*/
 openModalBtn.forEach(item => {
@@ -40,8 +41,12 @@ let openModal = (modal) => {
 }
 
 let closeModal = (modal) => {
-
-    modal.classList.remove('is-open');
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('hide-scroll');
+  if (header.classList.contains('menu-open')) {
+    header.classList.remove('menu-open');
+    document.querySelector('.mobile-menu').classList.remove('is-open');
+    document.querySelector('.menu-burger').classList.remove('is-open');
+  }
+  modal.classList.remove('is-open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('hide-scroll');
 }
