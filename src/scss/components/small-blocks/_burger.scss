@@ -50,6 +50,10 @@
       width: 30px;
       background: #2649D1;
       top: 10px;
+
+      @media (max-width: 767px) {
+        width: 22px;
+      }
     }
   }
 

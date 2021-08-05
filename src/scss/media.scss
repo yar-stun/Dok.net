@@ -317,8 +317,8 @@
   }
   .mobile-menu button {
     text-align: center;
-    margin: 30px 10px;
     border-radius: 10px;
+    width: 100%;
   }
 
   .text-decor.note__title-decor {
@@ -361,6 +361,21 @@
 }
 
 @media (max-width: 768px) {
+
+  .tabs-nav__list {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+  }
+
+  .tabs-category__list {
+    padding-top: 150px;
+  }
+
+  .tabs-nav__btn {
+    margin-right: 0 !important;
+  }
 
   .reviews {
     padding: 30px 0 40px 0;
@@ -411,7 +426,7 @@
   }
 
   .text-decor {
-    width: 35px;
+    width: 40px;
     height: 38px;
   }
 
@@ -508,6 +523,10 @@
     box-sizing: border-box;
   }
 
+  .advantage-item {
+    width: 70%;
+  }
+
   .modal__subtitle {
     font-size: 14px;
     line-height: 18px;
@@ -525,6 +544,21 @@
   }
 
 }
+
+@media (max-width: 680px) {
+  .hero__right {
+    padding-left: 0;
+  }
+
+  .hero__right-img {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+}
+
+
 
 @media (max-width: 640px) {
 
@@ -545,6 +579,10 @@
     padding: 11px 13px 15px 15px;
   }
 
+  .mobile-menu__overlay{
+    padding: 0 10px;
+  }
+
 
   .reviews__decor1 {
     left: -180px;
@@ -553,14 +591,14 @@
   }
 
   .note__left {
-    height: 475px;
+    height: 365px;
   }
 
   .note-board {
     position: absolute;
     width: 90%;
     height: 64px;
-    top: 505px;
+    top: 415px;
   }
 
   .hero__bg-text {
@@ -571,6 +609,7 @@
     right: 30px;
     top: 100px;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -623,34 +662,64 @@
 }
 
 
+@media (max-width: 490px){
 
-@media (max-width: 480px) {
   .note__left {
-    height: 365px;
+    height: 300px;
   }
 
   .note-board {
-    top: 415px;
+    top: 360px;
   }
+  .note__left {
+    margin-bottom: 60px;
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+
+  .text-decor.note__title-decor {
+    left: 230px;
+    top: 20px;
+  }
+
+  .note__title.block-title {
+    display: inline-block;
+    max-width: 300px;
+  }
+
+  .note__right {
+    padding-left: 27px;
+  }
+
 
   .review-card {
     width: 100%;
   }
+
   .review-card__inner-slider {
     width: 100%;
     margin: 0 auto;
   }
+
   .hero__bg-text {
     left: 0px;
     top: 170px;
   }
+
   .hero__decor1 {
     width: 20%;
   }
+
   .text-decor.note__title-decor {
-    left: 300px;
-    top: 40px;
+    left: 230px;
+    top: 20px;
   }
+
   .slider__inner {
     margin-top: 30px;
   }

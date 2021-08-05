@@ -77,4 +77,14 @@ $board-height: 80px;
     border-radius: 0 23px 23px 0;
     z-index: -1;
   }
+
+  svg {
+    max-width: 133px;
+    max-height: 45px;
+
+    @media (max-width: 991px) {
+      max-width: 111px;
+      max-height: 38px;
+    }
+  }
 }
