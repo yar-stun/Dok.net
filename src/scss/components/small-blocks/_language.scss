@@ -3,16 +3,19 @@
   align-items: center;
   margin-left: 60px;
   cursor: pointer;
-  transition: width .3s ease-in-out;
+  transition: width .2s ease-in-out;
+  position: relative;
 
   &.is-open {
 
-    .language__item {
-      display: inline-block;
+    .language__box {
+      visibility: visible;
+      transform: translateY(0) scale(1);
+      opacity: 1;
     }
 
     svg {
-      transform: rotate(-180deg);
+      transform: rotate(90deg);
     }
   }
 
@@ -21,7 +24,6 @@
     font-size: 18px;
     cursor: pointer;
     margin-right: 11px;
-    display: none;
 
     &.language__item--active {
       display: inline-block;
@@ -32,6 +34,21 @@
     width: 6px;
     height: 11px;
     display: block;
-    transition: transform .3s ease-in-out;
+    transition: transform .2s ease-in-out;
+  }
+
+  &__box {
+    visibility: hidden;
+    padding: 10px;
+    background: $color-white;
+    border-radius: 11px;
+    display: flex;
+    min-height: 80px;
+    transform: translateY(30px) scale(0.8);
+    opacity: 0;
+    transition: .2s ease-in;
+    position: absolute;
+    top: 35px;
+    left: 0;
   }
 }
