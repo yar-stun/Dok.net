@@ -112,6 +112,25 @@
 
 @media (max-width: 991px) {
 
+  .language.header__language.is-open {
+    top: -20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .language.is-open .language__item:first-child {
+    background: #fff;
+    padding-top: 30px;
+  }
+
+
+  .language__box {
+    left: 15px;
+  }
+
+  .language__item {
+    padding-bottom: 10px;
+  }
+
   *,
   *:after,
   *:before {
@@ -280,7 +299,6 @@
 
   .header {
     padding-top: 20px;
-    background: #fff;
   }
 
   .menu-burger {
