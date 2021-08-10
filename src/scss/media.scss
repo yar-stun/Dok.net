@@ -92,6 +92,12 @@
     bottom: -279px;
     max-width: 100px;
   }
+
+  *,
+  *:before,
+  *:after {
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+  }
 }
 
 
@@ -113,22 +119,22 @@
 @media (max-width: 991px) {
 
   .language.header__language.is-open {
-    top: -20px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-  }
-  .language.is-open .language__item:first-child {
-    background: #fff;
-    padding-top: 30px;
   }
 
 
   .language__box {
     left: 15px;
+    top: -20px;
   }
+
 
   .language__item {
     padding-bottom: 10px;
+  }
+  .language__item:first-child {
+    padding-top: 33px;
   }
 
   *,
@@ -492,7 +498,7 @@
   }
 
   .header__logo svg {
-    width: 89px;
+    width: 118px;
     height: 30px;
   }
   .hero-board {
