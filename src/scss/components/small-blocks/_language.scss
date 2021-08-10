@@ -1,18 +1,23 @@
 .language {
   display: flex;
   align-items: center;
-  margin-left: 60px;
+  margin-left: 24px;
   cursor: pointer;
   transition: width .2s ease-in-out;
   position: relative;
   z-index: 1;
+  width: 130px;
+  align-self: stretch;
 
   &.is-open {
 
-    .language__box {
-      visibility: visible;
-      transform: translateY(0) scale(1);
-      opacity: 1;
+    .language__item {
+      background: $color-white;
+    }
+
+    .language__item:not(.language__item--active) {
+      display: block;
+      animation: animLang .3s ease;
     }
 
     svg {
@@ -23,10 +28,35 @@
   &__item {
     font-weight: 400;
     font-size: 18px;
+    text-align: center;
     cursor: pointer;
-    margin-right: 11px;
+    padding-bottom: 7px;
+    transition: .3s;
+    display: none;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &:first-child {
+      padding-top: 13px;
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+    }
+
+    &:last-child {
+      padding-bottom: 13px;
+      border-bottom-left-radius: 9px;
+      border-bottom-right-radius: 9px;
+    }
 
     &.language__item--active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &-curr {
       display: inline-block;
     }
   }
@@ -34,22 +64,27 @@
   svg {
     width: 6px;
     height: 11px;
-    display: block;
     transition: transform .2s ease-in-out;
   }
 
   &__box {
-    visibility: hidden;
-    padding: 10px;
-    background: $color-white;
-    border-radius: 11px;
-    display: flex;
+    width: 130px;
     min-height: 80px;
-    transform: translateY(30px) scale(0.8);
-    opacity: 0;
     transition: .2s ease-in;
     position: absolute;
-    top: 35px;
+    top: 0;
     left: 0;
+  }
+}
+
+
+@keyframes animLang {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

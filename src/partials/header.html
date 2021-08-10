@@ -6,7 +6,7 @@
       </div>
       <a class="logo header__logo">
         <svg class="header__logo-pc">
-        <use xlink:href="img/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </a>
 
@@ -30,15 +30,36 @@
         Оставить заявку
       </button>
       <div class="language header__language">
-        <span class="language__item language__item--active">RUS</span>
         <div class="language__box">
-          <span class="language__item">RUS</span>
-          <span class="language__item">ARA</span>
-          <span class="language__item">UKR</span>
+          <div class="language__item language__item--active">
+            <span class="language__item-curr">RUS</span>
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
+
+          <div class="language__item">
+            <span class="language__item-curr">ARA</span>
+          </div>
+          <div class="language__item">
+            <span class="language__item-curr">UKR</span>
+          </div>
+          <div class="language__item">
+            <span class="language__item-curr">ESP</span>
+          </div>
+          <div class="language__item">
+            <span class="language__item-curr">ETL</span>
+          </div>
+          <div class="language__item">
+            <span class="language__item-curr">FRE</span>
+          </div>
+          <div class="language__item">
+            <span class="language__item-curr">GER</span>
+          </div>
+          <div class="language__item">
+            <span class="language__item-curr">TR</span>
+          </div>
         </div>
-        <svg>
-        <use xlink:href="img/sprite.svg#arrow-right"></use>
-        </svg>
       </div>
     </div>
 
@@ -49,7 +70,8 @@
             <li class="nav__item"><a class="nav__link" href="">Каталог</a></li>
             <li class="nav__item"><a class="nav__link" href="">Отзывы</a></li>
             <li class="nav__item"><a class="nav__link" href="">Почему мы?</a></li>
-            <li class="nav__item"><a class="nav__link js-open-modal" href="" data-modal="contact-modal">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link js-open-modal" href="" data-modal="contact-modal">Контакты</a>
+            </li>
           </ul>
         </nav>
         <button class="btn btn-reset btn--primary btn--sm js-open-modal" data-modal="feedback-modal">

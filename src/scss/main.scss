@@ -1,5 +1,4 @@
 @import "vars";
-@import "media";
 
 // Big blocks
 @import "components/big-blocks/header";
@@ -27,3 +26,5 @@
 @import "components/small-blocks/feedback-form";
 @import "components/small-blocks/burger";
 @import "components/small-blocks/mobile-menu";
+
+@import "media";

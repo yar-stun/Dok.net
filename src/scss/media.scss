@@ -508,6 +508,7 @@
   .tabs-category {
     width: 100%;
     overflow-x: auto;
+    scrollbar-width: none;
   }
   .tabs-category__list {
     min-width: 1010px;
