@@ -290,8 +290,10 @@
     font: 400 14px/120% "Stark", sans-serif;
   }
   .subsections__item {
-    display: block;
+    flex-direction: column;
+    align-items: center;
     padding-top: 30px;
+    text-align: center;
   }
   img.subsections__item-img {
     width: 44px;
@@ -352,7 +354,7 @@
 
   .samples__tabs-nav {
     margin-left: 0;
-    margin-top: 60px;
+    margin-top: 40px;
   }
   .samples__tabs-head {
     flex-direction: column;
@@ -386,15 +388,12 @@
 
 @media (max-width: 768px) {
 
-  .tabs-nav__list {
-    position: absolute;
-    left: 0;
-    top: 60px;
-    width: 100%;
+  .samples__tabs-head {
+    margin-bottom: 30px;
   }
 
   .tabs-category__list {
-    padding-top: 150px;
+    padding-top: 145px;
   }
 
   .tabs-nav__btn {
@@ -486,7 +485,6 @@
   }
   .subsections__item-img {
     margin-right: 0;
-    margin-left: 5px;
   }
   .text-decor.note__title-decor {
     left: 360px;
@@ -665,12 +663,16 @@
 @media (max-width: 500px)  {
 
   .hero-board {
-    width: 102%;
-  }
-
-  .hero-board {
     bottom: -123px;
     height: 124px;
+    width: 102%;
+    justify-content: center;
+    padding: 0 0 0 15px;
+  }
+
+  .subsections__item {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .modal[aria-hidden="true"] .modal__overlay {

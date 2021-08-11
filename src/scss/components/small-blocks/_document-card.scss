@@ -10,8 +10,15 @@
     padding: 9px;
   }
 
+  &__img {
+    height: 250px;
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+
   &__body {
-    min-height: 95px;
+    min-height: 155px;
     padding: 7px 9px 15px;
   }
 
@@ -27,6 +34,28 @@
 
   &__btn {
     display: block;
+    padding: 18px 28px;
+    width: 62%;
+  }
+
+  &__price {
+    width: 44%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    margin-right: -30px;
+    background: #283773;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
   }
 }

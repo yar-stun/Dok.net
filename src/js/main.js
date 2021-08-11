@@ -18,6 +18,7 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('is-open');
     mobileMenu.classList.toggle('is-open');
     header.classList.toggle('menu-open');
+    document.body.classList.toggle('hide-scroll');
   }, 1);
 });
 
@@ -90,7 +91,6 @@ $(function() {
 let Shuffle = window.Shuffle;
 const element = document.getElementById('content-documents');
 const mainTabBtns = document.querySelectorAll('.tabs-nav__btn');
-const filterBtns = document.querySelectorAll('.js-filter-document');
 
 let shuffleInstance = new Shuffle(element, {
   itemSelector: '.document-card'
@@ -121,11 +121,4 @@ let setActiveTab = (tabs, current, className) => {
 
 /*Табы верхнего уровня*/
 shuffleTab(mainTabBtns, 'tabs-nav__btn--active');
-
-/*Табы сортировки*/
-shuffleTab(filterBtns, 'tabs-category__btn--active');
-
-/*Установка первого активного при загрузке*/
-setActiveTab(filterBtns, filterBtns[0], 'tabs-category__btn--active');
-shuffleInstance.filter(filterBtns[0].getAttribute('data-target'));
 

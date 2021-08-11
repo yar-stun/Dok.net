@@ -43,6 +43,7 @@ const styles = () => {
     .pipe(gulpif(!isProd, sourcemaps.init()))
     .pipe(sass().on("error", notify.onError()))
     .pipe(autoprefixer({
+      overrideBrowserslist: ['last 10 version'],
       cascade: false,
     }))
     .pipe(gulpif(isProd, cleanCSS({ level: 2 })))
@@ -55,6 +56,7 @@ const stylesBackend = () => {
 	return src('./src/scss/**/*.scss')
 		.pipe(sass().on("error", notify.onError()))
     .pipe(autoprefixer({
+      overrideBrowserslist: ['last 10 version'],
       cascade: false,
 		}))
 		.pipe(dest('./app/css/'))
