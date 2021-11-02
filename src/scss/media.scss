@@ -644,6 +644,27 @@
     padding-bottom: 9px;
   }
 
+  .service-card {
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 0;
+  }
+
+  .service-card__img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .service-card__price {
+    width: 44%;
+    margin-right: -30px;
+  }
+
+  .service-card__btn {
+    width: 62%;
+    padding: 19px 30px;
+  }
+
   .modal__title {
     font-size: 24px;
     font-weight: 500;
